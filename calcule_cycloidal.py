@@ -1,6 +1,6 @@
 from math import pi
 
-print('***Formula para cycloidal en fusion***\n')
+print('***Formula para cycloidal en fusion 360***\n')
 
 R = input('inserte radio de rotor en mm:    ')
 E = input('inserte exentricidad en mm:    ')
@@ -20,11 +20,13 @@ try:
     Y = "(-{R}*sin(t))+({R_r}*sin(t+atan(sin((1-{N})*t)/(({R}/{EN})-cos((1-{N})*t)))))+({E}*sin({N}*t))".format(R = R, R_r = R_r, N=N, EN=EN, E=E)
 
 
+    print('\npegue estos datos en drive curve (fusion 360)')
     print("============================================================================================")
     print('ecuacion de X')
     print(X)
     print('ecuacion de Y')
     print(Y)
+    print('t value')
     print(pi*2)
     print("============================================================================================")
 
